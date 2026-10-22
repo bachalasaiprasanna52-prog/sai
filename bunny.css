@@ -1,0 +1,33 @@
+.formcontainer{
+    
+    border: 10px solid;
+    width:300px;
+    background-color: darksalmon;
+    padding: 20px;
+
+}
+.formrow{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+  .checkboxrow{
+    display: inline-flex;
+    align-items: center;
+    gap:5px; 
+} 
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    margin: 0;
+ } 
+  button[type="submit"] {
+    display: block;
+    margin: auto;
+}
+ button[type="reset"]{
+  display:block ;
+  margin:auto ;
+ }

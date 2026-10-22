@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>login</title>
+    </head>
+    <style>
+        body{
+            font-family: Arial;
+            background: fixed;
+        }
+        .box{
+            border: 2px solid black;
+            width: 350px;
+            padding: 25px;
+            margin: 50px auto;
+            border-radius: 20px;
+            background: white;
+            box-shadow: 0px 0px 15px gray;
+            text-align: center;
+        }
+        input{
+            padding: 10px;
+            width: 90%;
+            margin: 8px;
+            border-radius: 8px;
+            border: 1px solid;
+        }
+        button{
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;    
+            margin-top: 10px;
+        }
+        button:hover{
+            background: #0056b3;
+        }
+        table{
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th{
+            background: #0056b3;
+            color: white;
+            padding: 8px;
+        }
+        td{
+            padding: 8px;
+            border: 1px solid;
+        }
+    </style>
+    <body>
+        <div class="box">
+    <h1>login Form</h1>
+    <input type="email"id="email"placeholder="Enter Your Email">
+    <input type="password"id="password"placeholder="Enter Your Password"><br>
+    <button onclick="User()">login</button>
+    <table id="Table"border"1">
+        <tr>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+    </table>
+        </div>
+        <script>
+            function User(){
+                let email = document.getElementById("email").value;
+                let password = document.getElementById("password").value;
+
+                if(email===""||password===""){
+                    alert("Please fill both details");
+                }
+                let table = document.getElementById("Table");
+                let newRow = table.insertRow();
+
+                let Cell1 = newRow.insertCell(0);
+                let Cell2 = newRow.insertCell(1);
+
+                Cell1.innerText = email;
+                Cell2.innerText = password;
+
+                localStorage.setItem(email,password);
+
+                document.getElementById("email").value = "";
+                document.getElementById("password").value = "";
+            }
+        </script>
+    </body>
+</html>

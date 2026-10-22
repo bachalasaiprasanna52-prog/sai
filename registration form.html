@@ -1,0 +1,125 @@
+
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        form{
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Registration Form</h1>
+
+        <form>
+
+            <!-- Roll Number -->
+            <div class="form-row">
+                <label>Roll no. :</label>
+                <input type="text">
+            </div>
+
+            <!-- Student Name -->
+            <div class="form-row">
+                <label>Student name :</label>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+
+            <!-- Father's Name -->
+            <div class="form-row">
+                <label>Father's name :</label>
+                <input type="text">
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="form-row">
+                <label>Date of birth :</label>
+                <input type="text" placeholder="Day" class="small">
+                <input type="text" placeholder="Month" class="small">
+                <input type="text" placeholder="Year" class="small">
+                <span>(DD-MM-YYYY)</span>
+            </div>
+
+            <!-- Mobile -->
+            <div class="form-row">
+                <label>Mobile no. :</label>
+                <input type="text" value="+91" class="code">
+                <input type="text">
+            </div>
+
+            <!-- Email -->
+            <div class="form-row">
+                <label>Email id :</label>
+                <input type="email">
+            </div>
+
+            <!-- Password -->
+            <div class="form-row">
+                <label>Password :</label>
+                <input type="password">
+            </div>
+
+            <!-- Gender -->
+            <div class="form-row">
+                <label>Gender :</label>
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+            </div>
+
+            <!-- Department -->
+            <div class="form-row">
+                <label>Department :</label>
+                <input type="checkbox"> CSE
+                <input type="checkbox"> IT
+                <input type="checkbox"> ECE
+                <input type="checkbox"> Civil
+                <input type="checkbox"> Mech
+            </div>
+
+            <!-- Course -->
+            <div class="form-row">
+                <label>Course :</label>
+                <select>
+                    <option>----- Select Current Course -----</option>
+                    <option>B.Tech</option>
+                    <option>B.Sc</option>
+                    <option>BCA</option>
+                    <option>MCA</option>
+                </select>
+            </div>
+
+            <!-- Student Photo -->
+            <div class="form-row">
+                <label>Student photo :</label>
+                <input type="file">
+            </div>
+
+            <!-- City -->
+            <div class="form-row">
+                <label>City :</label>
+                <input type="text">
+            </div>
+
+            <!-- Address -->
+            <div class="form-row">
+                <label>Address :</label>
+                <textarea></textarea>
+            </div>
+
+            <!-- Register Button -->
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

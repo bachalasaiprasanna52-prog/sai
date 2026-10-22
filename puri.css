@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf0;
+    color: #333;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    background: #7b1e00;
+    min-height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 7%;
+
+    box-shadow: 0 3px 10px #555;
+}
+
+.logo {
+    color: #ffd166;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ffd166;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    height: 600px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+
+    url("https://upload.wikimedia.org/wikipedia/commons/4/4b/Annavaram_Temple_complex_view_01.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+    text-shadow: 3px 3px 8px black;
+}
+
+.hero p {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+
+    background: #e67e22;
+    color: white;
+
+    padding: 13px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #ffb703;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+.section,
+.intro {
+    padding: 70px 10%;
+
+    text-align: center;
+}
+
+.section h2,
+.intro h2,
+.special h2 {
+
+    color: #8b2500;
+
+    font-size: 36px;
+
+    margin-bottom: 30px;
+}
+
+.intro {
+    background: white;
+}
+
+.intro p,
+.section > p {
+
+    max-width: 950px;
+
+    margin: 15px auto;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   HISTORY
+========================= */
+
+.history-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.history-text {
+    flex: 1;
+
+    text-align: left;
+}
+
+.history-text p {
+    margin-bottom: 15px;
+}
+
+.history-image {
+    flex: 1;
+}
+
+.history-image img {
+
+    width: 100%;
+
+    border-radius: 20px;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.3);
+}
+
+
+/* =========================
+   TEMPLE CARDS
+========================= */
+
+.temple-section {
+
+    background:
+    linear-gradient(
+        135deg,
+        #ffe0a3,
+        #fff3d6
+    );
+
+    padding: 70px 8%;
+
+    text-align: center;
+}
+
+.temple-section h2 {
+
+    color: #8b2500;
+
+    font-size: 36px;
+
+    margin-bottom: 35px;
+}
+
+.cards {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.card {
+
+    background: white;
+
+    width: 250px;
+
+    padding: 30px 20px;
+
+    border-radius: 18px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.25);
+}
+
+.card h3 {
+
+    color: #d35400;
+
+    margin-bottom: 10px;
+
+    font-size: 22px;
+}
+
+
+/* =========================
+   IMPORTANCE
+========================= */
+
+.importance {
+
+    background: white;
+}
+
+.mantra {
+
+    background: #7b1e00;
+
+    color: white;
+
+    max-width: 750px;
+
+    margin: 35px auto 0;
+
+    padding: 30px;
+
+    border-radius: 20px;
+}
+
+.mantra h3 {
+
+    color: #ffd166;
+
+    font-size: 27px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   SPECIAL FEATURES
+========================= */
+
+.special {
+
+    background: #fff0d0;
+
+    text-align: center;
+
+    padding: 70px 8%;
+}
+
+.features {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.features div {
+
+    background: white;
+
+    width: 280px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.15);
+}
+
+.features span {
+
+    font-size: 45px;
+}
+
+.features h3 {
+
+    color: #8b2500;
+
+    margin: 10px 0;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-text {
+
+    margin-bottom: 30px;
+
+    font-size: 18px;
+}
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.photo {
+
+    background: white;
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.2);
+
+    transition: 0.3s;
+}
+
+.photo:hover {
+
+    transform: scale(1.03);
+}
+
+.photo img {
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+.photo h3 {
+
+    color: #8b2500;
+
+    padding: 10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background: #461500;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px;
+}
+
+footer h2 {
+
+    color: #ffd166;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        padding: 15px;
+    }
+
+    .navbar ul {
+
+        margin-top: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .hero {
+
+        height: 500px;
+    }
+
+    .hero h1 {
+
+        font-size: 32px;
+    }
+
+    .hero p {
+
+        font-size: 20px;
+    }
+
+    .history-box {
+
+        flex-direction: column;
+    }
+
+    .history-text {
+
+        text-align: left;
+    }
+
+    .history-image {
+
+        width: 100%;
+    }
+
+    .section,
+    .intro {
+
+        padding: 50px 6%;
+    }
+
+}
